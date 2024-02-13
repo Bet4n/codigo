@@ -63,8 +63,8 @@ public class Taller1 {
                     case 3: 
 
     		misTareas.stream()
-             	filter(t -> MisTareas(tarea1,tarea2) >= tarea1.getprioridad() - tarea2.getPrioridad());
-             for (Tarea e: MisTareas)
+             	for ( tarea = misTareas)
+             for (int i = 5 ; 1 < 5 ; i--)
                  System.out.println("Id: " + t.getIdTarea());
                  System.out.println("Descripción: " + t.getDescripcion());
                  System.out.println("Prioridad: " + t.getPrioridad());
