@@ -1,0 +1,96 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ */
+
+package umariana.taller1;
+
+import java.util.ArrayList;
+import mundo.Tarea;
+import java.util.Scanner;
+
+
+/**
+ * @author Samuel 
+ * 
+ */
+	
+public class Taller1 {
+    public static void main(String[] args) {
+        Scanner lector = new Scanner(System.in);
+        new ArrayList<>();
+        boolean activo = true;
+                do {
+        System.out.println("==== Menu De Opciones ====\n"
+          	System.out.println "1 Agregar tarea"
+                System.out.println"2 Mostrar tareas"
+                System.out.println"3 Terminar el Programa"
+                System.out.println"===============");
+        
+    
+                
+                int opcion=lector.nextInt();
+                switch (opcion){
+                    
+                    case 1:
+                            System.out.println("ingrese el id de la tarea");
+                             int id=lector.nextInt();
+                             lector.nextLine();
+                             System.out.println("ingrese la descripcion de la tarea");
+                             String descripcion=lector.nextLine();
+                             System.out.println("ingrese la prioridad de 1-5");
+                             int prioridad=lector.nextInt();
+                             //Creacion del objeto y llenar la informacion
+                             Tarea nuevaTarea = new Tarea (id, descripcion, prioridad);
+                             //almacenar el objeto en la contenedora
+                             misTareas.add(nuevaTarea);
+                             System.out.println("La tarea agregada");
+                             
+                             
+                      
+                            break;
+
+
+                    case 2:
+                             System.out.println("======TAREAS REGISTRADAS======");
+                             for (Tarea t: misTareas)
+                             {
+                                 System.out.println("id: "+t.getIdTarea());
+                                 System.out.println("descripcion:"+t.getIdTarea());
+                                 System.out.println("prioridad: "+t.getIdTarea());
+                                 System.out.println("================");
+                             }
+                            break;
+                    case 3: 
+
+    		misTareas.stream()
+             	filter(t -> MisTareas(tarea1,tarea2) >= tarea1.getprioridad() - tarea2.getPrioridad());
+             for (Tarea e: MisTareas)
+                 System.out.println("Id: " + t.getIdTarea());
+                 System.out.println("Descripción: " + t.getDescripcion());
+                 System.out.println("Prioridad: " + t.getPrioridad());
+                 System.out.println("=========================");
+             });
+    break; System.out.println("opcion 3");
+                            break;
+                    case 4: 
+			activo = false
+			System.out.println("opcion 3");
+                    default:
+                        System.out.println("Programa terminado");
+			break;
+                }
+                }
+                
+                while (activo);
+}
+
+    private static void Tarea(int id, String descripcion, int prioridad) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+                
+    }
+
+
+
+
+
